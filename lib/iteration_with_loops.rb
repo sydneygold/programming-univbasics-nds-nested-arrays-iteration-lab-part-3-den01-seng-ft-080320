@@ -8,12 +8,12 @@ def join_nested_strings(src)
       while element_index < src[row_index].count do
         if src[row_index][element_index].class == String
           p outer_results << src[row_index][element_index]
-          p outer_results.join
+          p outer_results
         end
         element_index += 1
 
       end
       row_index += 1
     end
-    p outer_results
+    p outer_results.join
 end
